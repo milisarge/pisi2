@@ -1,0 +1,41 @@
+<PISI>
+    <Source>
+        <Name>openbox-menu</Name>
+        <Homepage>https://bitbucket.org/fabriceT/openbox-menu</Homepage>
+        <Packager>
+            <Name>Ayhan Yalçınsoy</Name>
+            <Email>ayhanyalcinsoy@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv2</License>
+	<IsA>app:gui</IsA>
+        <Summary>Openbox-menu is a pipemenu for Openbox window manager.</Summary>
+        <Description>Openbox-menu is a pipemenu for Openbox window manager. It provides a dynamic menu listing installed applications. Most of the work is done by the LXDE library menu-cache.</Description>
+        <Archive sha1sum="198b616ac582f76cc3cd118d16d8e030b916729a" type="tarbz2">https://bitbucket.org/fabriceT/openbox-menu/downloads/openbox-menu-0.8.0.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>gtk2-devel</Dependency>
+            <Dependency>glib2-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>openbox-menu</Name>
+        <RuntimeDependencies>
+            <Dependency>gtk2</Dependency>
+            <Dependency>glib2</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/bin/</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2015-12-01</Date>
+            <Version>1</Version>
+            <Comment>First release</Comment>
+            <Name>shamil</Name>
+            <Email>x@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
