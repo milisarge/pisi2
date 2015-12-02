@@ -1,0 +1,90 @@
+<PISI>
+    <Source>
+        <Name>dracut</Name>
+        <Homepage>https://dracut.wiki.kernel.org/</Homepage>
+        <Packager>
+            <Name>ali algul</Name>
+            <Email>ali algul</Email>
+        </Packager>
+        <License>GPL</License>
+        <Summary>Initramfs generation utility</Summary>
+        <Description>Initramfs generation utility</Description>
+        <BuildDependencies>
+            <Dependency>dmraid-devel</Dependency>
+            <Dependency>lvm2-devel</Dependency>
+            <Dependency>gpgme-devel</Dependency>
+	    <Dependency>mdadm</Dependency>
+            <Dependency>btrfs-progs-devel</Dependency>
+            <Dependency>libutil-linux-devel</Dependency>
+            <Dependency>util-linux</Dependency>
+            <Dependency>kmod</Dependency>
+            <Dependency>sysvinit</Dependency>
+            <!--Dependency>dash</Dependency>
+	    <Dependency>nbd-utils</Dependency-->
+        </BuildDependencies>
+        <Archive sha1sum="0d0f13a30b3fba29f6cfdb710512b024510cbba9" type="tarxz">https://www.kernel.org/pub/linux/utils/boot/dracut/dracut-043.tar.xz</Archive>
+    </Source>
+    <Package>
+        <Name>dracut</Name>
+        <RuntimeDependencies>
+            <Dependency>cryptsetup</Dependency>
+            <Dependency>lvm2</Dependency>
+	    <Dependency>btrfs-progs</Dependency>
+	    <Dependency>dmraid</Dependency>
+	    <Dependency>dhclient</Dependency>
+	    <Dependency>gpgme</Dependency>
+	     <Dependency>mdadm</Dependency>
+	     <Dependency>mdadm-static</Dependency>
+             <Dependency>libutil-linux</Dependency>
+            <Dependency>util-linux</Dependency>
+            <Dependency>kmod</Dependency>
+            <Dependency>kbd</Dependency>
+            <Dependency>biosdevname</Dependency>
+            <Dependency>busybox</Dependency>
+            <Dependency>iproute2</Dependency>
+            <Dependency>iputils</Dependency>
+            <Dependency>sysvinit</Dependency>
+	     <!--Dependency>fipvlan</Dependency>
+	    <Dependency>plymouth</Dependency>
+	    <Dependency>rpcbind</Dependency>
+	     <Dependency>fcrls</Dependency>
+	    <Dependency>cifs-utils</Dependency>
+	    <Dependency>multipath-tools</Dependency>
+	    <Dependency>nbd-utils</Dependency>
+             <Dependency>fcping</Dependency>
+	     <Dependency>fcoemon</Dependency>
+	     <Dependency>fcoeadm</Dependency>
+	     <Dependency>fcnsq</Dependency>	
+	     <Dependency>dcbtool</Dependency>
+	     <Dependency>lldpad</Dependency>
+	     <Dependency>lldptool</Dependency-->
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="executable">/usr/bin/dracut</Path>
+            <Path fileType="executable">/usr/bin/dracut-catimages</Path>
+            <Path fileType="executable">/usr/bin/lsinitrd</Path>
+            <Path fileType="executable">/usr/bin/mkinitrd</Path>
+            <Path fileType="data">/usr/lib</Path>
+            <Path fileType="data">/usr/share/bash-completion</Path>
+            <Path fileType="data">/usr/share/pkgconfig/dracut.pc</Path>
+            <Path fileType="man">/usr/share/man</Path> 
+        </Files>
+	<!--Provides>
+            <COMAR script="package.py">System.Package</COMAR>
+            <COMAR script="packageHandler.py">System.PackageHandler</COMAR>
+        </Provides-->
+        </Package>
+
+    <History>
+        <Update release="2">
+            <Date>2015-12-03</Date>
+            <Version>0.43</Version>
+            <Comment>build</Comment>
+            <Name>shamil</Name>
+            <Email>shamil</Email>
+        </Update>
+    </History>
+</PISI>
+
+<!-- By PiSiDo 2.0.0 -->
