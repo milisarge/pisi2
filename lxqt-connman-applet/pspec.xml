@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>lxqt-connman-applet</Name>
+        <Homepage>http://tint2.googlecode.com/</Homepage>
+        <Packager>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <IsA>app</IsA>
+        <Summary>A Lightweight Panel and Taskbar</Summary>
+        <Description>Tint2 is a simple panel and taskbar intentionally made for openbox3, but should also work with other window managers. The goal is to keep a clean and unintrusive look with code lightweight and compliance with freedesktop specifications.</Description>
+        <Archive sha1sum="22e4b04ae49619e7efc32c9ac7bd5c2091899b39" type="zip">https://github.com/surlykke/lxqt-connman-applet/archive/master.zip</Archive>
+        <BuildDependencies>
+            <Dependency>liblxqt-devel</Dependency>
+            <Dependency>qt5-linguist</Dependency>
+            <Dependency>qt5-svg-devel</Dependency>
+            <Dependency>libqtxdg-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>lxqt-connman-applet</Name>
+        <RuntimeDependencies>
+            <Dependency>liblxqt</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/usr/share/lxqt</Path>
+            <Path fileType="data">/usr/share/cmake</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2015-12-01</Date>
+            <Version>0.11</Version>
+            <Comment>First release</Comment>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
