@@ -1,0 +1,18 @@
+
+Package: tint2
+--------------
+
+Missing dependencies
+--------------------
+gtk2
+cairo
+glib2
+pango
+imlib2
+libX11
+libXrandr
+gdk-pixbuf
+libXdamage
+libXrender
+libXinerama
+libXcomposite
