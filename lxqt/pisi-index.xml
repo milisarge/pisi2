@@ -1,0 +1,2357 @@
+<PISI>
+    <SpecFile>
+        <Source>
+            <Name>obconf-qt</Name>
+            <Homepage>http://www.lxde.org</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Packager>
+            <License>GPL2</License>
+            <IsA>app</IsA>
+            <PartOf>desktop.lxqt.base</PartOf>
+            <Summary xml:lang="en">This is a Qt port of ObConf, configurator of OpenBox window manager.</Summary>
+            <Summary xml:lang="tr">Pencere yöneticisi yapılandırma (Openbox için).</Summary>
+            <Description xml:lang="en">This is a Qt port of ObConf, configurator of OpenBox window manager.</Description>
+            <Description xml:lang="tr">Bu bir obconf Qt portudur, OpenBox pencere yöneticisi yapılandırıcı.</Description>
+            <Archive type="zip" sha1sum="c731b99c53965de38b03baa0792773189d1875c8">http://source.pisilinux.org/1.0/obconf-qt-master-28022015.zip</Archive>
+            <BuildDependencies>
+                <Dependency>cmake</Dependency>
+                <Dependency>glib2-devel</Dependency>
+                <Dependency>libX11-devel</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libxml2-devel</Dependency>
+                <Dependency versionFrom="3.5.2">openbox-devel</Dependency>
+                <Dependency>pkgconfig</Dependency>
+                <Dependency>qt5-base-devel</Dependency>
+                <Dependency>qt5-linguist</Dependency>
+                <Dependency>qt5-x11extras-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/obconf-qt/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>obconf-qt</Name>
+            <RuntimeDependencies>
+                <Dependency>glib2</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libxml2</Dependency>
+                <Dependency versionFrom="3.5.2">openbox</Dependency>
+                <Dependency>qt5-base</Dependency>
+                <Dependency>qt5-x11extras</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="3">
+                <Date>2015-05-13</Date>
+                <Version>28022015</Version>
+                <Comment>version bump for qt5</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-11-07</Date>
+                <Version>0.1.0</Version>
+                <Comment>rebuild</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-05-02</Date>
+                <Version>0.1</Version>
+                <Comment>First Release</Comment>
+                <Name>Vedat Demir</Name>
+                <Email>vedat@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>lxqt-admin</Name>
+            <Homepage>https://github.com/lxde/lxqt-admin</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app</IsA>
+            <PartOf>desktop.lxqt.base</PartOf>
+            <Summary xml:lang="en">LXQt system administration tool</Summary>
+            <Summary xml:lang="tr">LXQt sistem yönetim araçları.</Summary>
+            <Description xml:lang="en">LXQt system administration tool</Description>
+            <Description xml:lang="tr">LXQt sistem yönetim araçlarını içerir.</Description>
+            <Archive type="tarxz" sha1sum="bf8a2bf5340486403335b4f24754f6bc06172bb1">http://downloads.lxqt.org/lxqt/0.10.0/lxqt-admin-0.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>cmake</Dependency>
+                <Dependency>glib2-devel</Dependency>
+                <Dependency>kwindowsystem-devel</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>liblxqt-devel</Dependency>
+                <Dependency>qt5-base-devel</Dependency>
+                <Dependency>qt5-linguist</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/lxqt-admin/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>lxqt-admin</Name>
+            <Summary xml:lang="en">Development files for PCManFM</Summary>
+            <RuntimeDependencies>
+                <Dependency>glib2</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>liblxqt</Dependency>
+                <Dependency>qt5-base</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/lxqt-admin-time.desktop" permission="0644" owner="root">lxqt-admin-time.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/lxqt/translations/lxqt-admin-time/lxqt-admin-time_tr.qm" permission="0644" owner="root">lxqt-admin-time_tr.qm</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/lxqt-admin-user.desktop" permission="0644" owner="root">lxqt-admin-user.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="3">
+                <Date>2015-05-13</Date>
+                <Version>0.9.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-10-25</Date>
+                <Version>0.8.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-05-22</Date>
+                <Version>0.1.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Vedat Demir</Name>
+                <Email>vedat@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>libqtxdg</Name>
+            <Homepage>http://www.lxqt.org</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Packager>
+            <License>GPL2</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.lxqt.base</PartOf>
+            <Summary xml:lang="en">Library providing freedesktop.org specs implementations for Qt.</Summary>
+            <Description xml:lang="en">Library providing freedesktop.org specs implementations for Qt.</Description>
+            <Icon>lxqt-sudo</Icon>
+            <Archive type="tarxz" sha1sum="cd5ad7881099ceba52df893005dc85153980ef45">http://downloads.lxqt.org/libqtxdg/1.3.0/libqtxdg-1.3.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>libgcc</Dependency>
+                <Dependency>cmake</Dependency>
+                <Dependency>qt5-assistant-devel</Dependency>
+                <Dependency>qt5-base-devel</Dependency>
+                <Dependency>qt5-xmlpatterns-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/libqtxdg/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libqtxdg</Name>
+            <Summary xml:lang="en">Development headers for liblxqt</Summary>
+            <RuntimeDependencies>
+                <Dependency>libgcc</Dependency>
+                <Dependency>qt5-base</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share/</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>libqtxdg-devel</Name>
+            <Summary xml:lang="en">Development headers for libqtxdg</Summary>
+            <RuntimeDependencies>
+                <Dependency release="4">libqtxdg</Dependency>
+                <Dependency>qt5-base-devel</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="4">
+                <Date>2015-11-03</Date>
+                <Version>1.3.0</Version>
+                <Comment>Version bump</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="3">
+                <Date>2015-05-13</Date>
+                <Version>1.2.0</Version>
+                <Comment>version bump and compiled with qt5</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-11-10</Date>
+                <Version>1.0.0</Version>
+                <Comment>version bump.</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-04-25</Date>
+                <Version>0.5.3</Version>
+                <Comment>First Release</Comment>
+                <Name>Vedat Demir</Name>
+                <Email>vedat@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>compton-conf</Name>
+            <Homepage>http://www.lxde.org</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.lxqt.base</PartOf>
+            <Summary xml:lang="en">GUI configuration tool for compton X composite manager.</Summary>
+            <Summary xml:lang="tr">Compton X kompozit yöneticisi için GUI yapılandırma aracı.</Summary>
+            <Description xml:lang="en">GUI configuration tool for compton X composite manager.</Description>
+            <Description xml:lang="tr">X Kompozit yöneticisi yapılandırma (compton&apos;dan için).</Description>
+            <Archive type="zip" sha1sum="8401534e94298895cc7cb668c0ed81916a229ef1">http://source.pisilinux.org/1.0/compton-conf-master-28012015.zip</Archive>
+            <BuildDependencies>
+                <Dependency>qt5-base-devel</Dependency>
+                <Dependency>qt5-linguist</Dependency>
+                <Dependency>libconfig-devel</Dependency>
+                <Dependency>pkgconfig</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>cmake</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/compton-conf/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>compton-conf</Name>
+            <RuntimeDependencies>
+                <Dependency>qt5-base</Dependency>
+                <Dependency>libconfig</Dependency>
+                <Dependency>libgcc</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/compton-conf.desktop" permission="0644" owner="root">compton-conf.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="3">
+                <Date>2015-05-13</Date>
+                <Version>28012015</Version>
+                <Comment>compiled with qt5</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-11-07</Date>
+                <Version>0.1.0</Version>
+                <Comment>rebuild</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-05-06</Date>
+                <Version>0.1.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Vedat Demir</Name>
+                <Email>v.demir@mail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>pisilinux-default-settings-lxqt</Name>
+            <Homepage>http://www.pisilinux.org</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>data</IsA>
+            <PartOf>desktop.lxqt.base</PartOf>
+            <Summary xml:lang="en">PisiLinux default settings for lxqt</Summary>
+            <Summary xml:lang="tr">Pisilinux lxqt öntanımlı ayarları</Summary>
+            <Description xml:lang="en">This package contains the lxqt default settings for Pisilinux.</Description>
+            <Description xml:lang="tr">Bu paket, PisiLinux lxqt için öntanımlı ayarları içerir.</Description>
+            <Archive type="targz" sha1sum="9a3b37bbd1f4aaf31900ec8aec7abb6b3ab59d74">http://source.pisilinux.org/1.0/pisilinux-default-settings-lxqt-0.2.1.tar.gz</Archive>
+            <SourceURI>base/pisilinux-default-settings-lxqt/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>pisilinux-default-settings-lxqt</Name>
+            <Files>
+                <Path fileType="data">/usr/share/lxqt</Path>
+                <Path fileType="config">/etc/lxqt</Path>
+                <Path fileType="config">/etc/pcmanfm-qt</Path>
+                <Path fileType="data">/usr/share/lxdm/themes</Path>
+            </Files>
+            <Conflicts>
+                <Package>pisilinux-default-settings</Package>
+                <Package>pisilinux-default-settings-lxde</Package>
+                <Package>pisilinux-default-settings-kde</Package>
+                <Package>pisilinux-default-settings-xfce</Package>
+            </Conflicts>
+            <Replaces>
+                <Package>pisilinux-default-settings-lxde</Package>
+            </Replaces>
+            <Provides>
+                <COMAR script="package.py">System.Package</COMAR>
+            </Provides>
+        </Package>
+        <History>
+            <Update release="3">
+                <Date>2015-07-09</Date>
+                <Version>0.2.1</Version>
+                <Comment>version bump fixed icon theme</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2015-05-13</Date>
+                <Version>0.2</Version>
+                <Comment>version bump for lxqt 0.9</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-02-08</Date>
+                <Version>0.1</Version>
+                <Comment>First release</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>lxqt-common</Name>
+            <Homepage>http://www.lxde.org</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Packager>
+            <License>GPL2</License>
+            <IsA>data</IsA>
+            <PartOf>desktop.lxqt.base</PartOf>
+            <Summary xml:lang="en">Common data to run a LXQt session.</Summary>
+            <Summary xml:lang="tr">Bir LXQt oturumunu çalıştırmak için ortak veri.</Summary>
+            <Description xml:lang="en">Common data file required for running an lxde-qt session</Description>
+            <Description xml:lang="tr">Bir lxde-qt oturumu çalıştırmak için gerekli ortak veri dosyası.</Description>
+            <Archive type="tarxz" sha1sum="1bef9da64640a377027690006057b63f0d75df2b">http://downloads.lxqt.org/lxqt/0.10.0/lxqt-common-0.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>cmake</Dependency>
+                <Dependency>kwindowsystem-devel</Dependency>
+                <Dependency>liblxqt-devel</Dependency>
+                <Dependency>qt5-linguist</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/lxqt-common/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>lxqt-common</Name>
+            <Summary xml:lang="en">Development files for PCManFM</Summary>
+            <RuntimeDependencies>
+                <Dependency>gtk2</Dependency>
+                <Dependency>icon-theme-ardis</Dependency>
+                <Dependency>libfm-qt</Dependency>
+                <Dependency>lxqt-panel</Dependency>
+                <Dependency>lxqt-policykit</Dependency>
+                <Dependency>lxqt-session</Dependency>
+                <Dependency>pcmanfm-qt</Dependency>
+                <Dependency>pisilinux-default-settings-lxqt</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="config">/etc</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="data">/usr/share/themes/lxqt</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/desktop-directories/lxqt-leave.directory" permission="0644" owner="root">lxqt-leave.directory</AdditionalFile>
+                <AdditionalFile target="/usr/share/desktop-directories/lxqt-settings.directory" permission="0644" owner="root">lxqt-settings.directory</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="5">
+                <Date>2015-11-03</Date>
+                <Version>0.10.0</Version>
+                <Comment>version bump</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="4">
+                <Date>2015-05-13</Date>
+                <Version>0.9.1</Version>
+                <Comment>version bump</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="3">
+                <Date>2015-02-10</Date>
+                <Version>0.9.0</Version>
+                <Comment>version bump and compiled qt5</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-11-07</Date>
+                <Version>0.8.0</Version>
+                <Comment>version bump</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-05-02</Date>
+                <Version>0.7.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Vedat Demir</Name>
+                <Email>vedat@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>lximage-qt</Name>
+            <Homepage>http://www.lxde.org</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Packager>
+            <License>GPL2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.lxqt.base</PartOf>
+            <Summary xml:lang="en">Image viewer and screenshot tool.</Summary>
+            <Summary xml:lang="tr">Resim görüntüleyici ve ekran görüntüsü aracı.</Summary>
+            <Description xml:lang="en">Image viewer and screenshot tool.</Description>
+            <Description xml:lang="tr">lximage-qt, Resim görüntüleyici ve ekran görüntüsü aracıdır.</Description>
+            <Archive type="targz" sha1sum="208c8ad4d4580ea388fb18dbb02090d470b32250">http://downloads.lxqt.org/lximage-qt/0.4.0/lximage-qt-0.4.0.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>glib2-devel</Dependency>
+                <Dependency>cmake</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>qt5-base-devel</Dependency>
+                <Dependency>binutils</Dependency>
+                <Dependency>qt5-x11extras-devel</Dependency>
+                <Dependency>qt5-linguist</Dependency>
+                <Dependency>pcmanfm-qt-devel</Dependency>
+                <Dependency>libexif-devel</Dependency>
+                <Dependency>libX11-devel</Dependency>
+                <Dependency versionFrom="1.2">libfm-qt-devel</Dependency>
+                <Dependency>qt5-qdbusviewer</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch>desktop.patch</Patch>
+            </Patches>
+            <SourceURI>base/lximage-qt/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>lximage-qt</Name>
+            <RuntimeDependencies>
+                <Dependency>glib2</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>qt5-base</Dependency>
+                <Dependency>libexif</Dependency>
+                <Dependency>libfm-qt</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>qt5-x11extras</Dependency>
+                <Dependency>pcmanfm-qt</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/share/</Path>
+                <Path fileType="executable">/usr/bin</Path>
+            </Files>
+            <Replaces>
+                <Package>screengrab</Package>
+            </Replaces>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/lximage-qt/translations/lximage-qt_tr.qm" permission="0644" owner="root">lximage-qt_tr.qm</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="3">
+                <Date>2015-05-13</Date>
+                <Version>0.4.0</Version>
+                <Comment>version bump for qt5</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-04-25</Date>
+                <Version>0.3.0</Version>
+                <Comment>version bump</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-04-25</Date>
+                <Version>0.2.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Vedat Demir</Name>
+                <Email>vedat@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>lxqt-panel</Name>
+            <Homepage>http://www.lxde.org</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Packager>
+            <License>GPL2</License>
+            <IsA>app</IsA>
+            <PartOf>desktop.lxqt.base</PartOf>
+            <Summary xml:lang="en">Desktop panel</Summary>
+            <Summary xml:lang="tr">LXQt masaüstü paneli.</Summary>
+            <Description xml:lang="en">The LXQt desktop panel</Description>
+            <Description xml:lang="tr">lxqt-panel, LXQt masaüstü panelidir.</Description>
+            <Archive type="tarxz" sha1sum="c70dc07abe9d35c6f0a41c12813f71f7350c3eac">http://downloads.lxqt.org/lxqt/0.10.0/lxqt-panel-0.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>alsa-lib-devel</Dependency>
+                <Dependency>cmake</Dependency>
+                <Dependency>glib2-devel</Dependency>
+                <Dependency>kguiaddons-devel</Dependency>
+                <Dependency>kwindowsystem-devel</Dependency>
+                <Dependency>libX11-devel</Dependency>
+                <Dependency>libXcomposite-devel</Dependency>
+                <Dependency>libXdamage-devel</Dependency>
+                <Dependency>libdbusmenu-qt-devel</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>liblxqt-devel</Dependency>
+                <Dependency>libqtxdg-devel</Dependency>
+                <Dependency>libsysstat-devel</Dependency>
+                <Dependency>libxkbcommon-devel</Dependency>
+                <Dependency>lm_sensors-devel</Dependency>
+                <Dependency>lxqt-globalkeys-devel</Dependency>
+                <Dependency>pulseaudio-libs-devel</Dependency>
+                <Dependency>qt5-linguist</Dependency>
+                <Dependency>solid-devel</Dependency>
+                <Dependency>lxqt-menu-cache-devel</Dependency>
+                <Dependency>libstatgrab</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/lxqt-panel/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>lxqt-panel</Name>
+            <Summary xml:lang="en">Development files for lxqt-menu-cache</Summary>
+            <RuntimeDependencies>
+                <Dependency>alsa-lib</Dependency>
+                <Dependency>kwindowsystem</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libXcomposite</Dependency>
+                <Dependency>libXdamage</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>libdbusmenu-qt</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>liblxqt</Dependency>
+                <Dependency>libqtxdg</Dependency>
+                <Dependency>libsysstat</Dependency>
+                <Dependency>libxcb</Dependency>
+                <Dependency>libxkbcommon</Dependency>
+                <Dependency>lm_sensors</Dependency>
+                <Dependency>lxqt-globalkeys</Dependency>
+                <Dependency>pulseaudio-libs</Dependency>
+                <Dependency>qt5-base</Dependency>
+                <Dependency>qt5-x11extras</Dependency>
+                <Dependency>solid</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="config">/etc/lxqt</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="man">/usr/share/man</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/lxqt/translations/lxqt-panel/lxqt-panel_tr.qm" permission="0644" owner="root">lxqt-panel_tr.qm</AdditionalFile>
+                <AdditionalFile target="/usr/share/lxqt/lxqt-panel/networkmonitor.desktop" permission="0644" owner="root">networkmonitor.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/lxqt/translations/lxqt-panel/networkmonitor/networkmonitor_tr.qm" permission="0644" owner="root">networkmonitor_tr.qm</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <Package>
+            <Name>lxqt-panel-devel</Name>
+            <Summary xml:lang="en">Development headers for lxqt-panel</Summary>
+            <RuntimeDependencies>
+                <Dependency release="4">lxqt-panel</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/lxqt-panel/lxqt-panel_tr.qm" permission="0644" owner="root" group="root">lxqt-panel_tr.qm</AdditionalFile>
+                <AdditionalFile target="/usr/share/lxqt-panel/networkmonitor.desktop" permission="0644" owner="root" group="root">networkmonitor.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/lxqt-panel/networkmonitor_tr.qm" permission="0644" owner="root" group="root">networkmonitor_tr.qm</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="4">
+                <Date>2015-11-03</Date>
+                <Version>0.10.0</Version>
+                <Comment>version bump</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="3">
+                <Date>2015-05-13</Date>
+                <Version>0.9.0</Version>
+                <Comment>version bump and compiled with qt5</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-10-21</Date>
+                <Version>0.8.0</Version>
+                <Comment>version bump.</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-05-02</Date>
+                <Version>0.7.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Vedat Demir</Name>
+                <Email>vedat@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>lxqt-about</Name>
+            <Homepage>http://www.lxde.org</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Packager>
+            <License>GPL2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.lxqt.base</PartOf>
+            <Summary xml:lang="en">LXQt about dialog.</Summary>
+            <Summary xml:lang="tr">LXQt hakkında bilgi.</Summary>
+            <Description xml:lang="en">About dialog of LXDE-Qt</Description>
+            <Description xml:lang="tr">LXDE-Qt hakkında bilgi içerir.</Description>
+            <Archive type="tarxz" sha1sum="f40336f99ceb57643e81ffc18bf6e35a48ec4559">http://downloads.lxqt.org/lxqt/0.10.0/lxqt-about-0.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>cmake</Dependency>
+                <Dependency>kwindowsystem-devel</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>liblxqt-devel</Dependency>
+                <Dependency>qt5-linguist</Dependency>
+                <Dependency>libqtxdg-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/lxqt-about/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>lxqt-about</Name>
+            <Summary xml:lang="en">Development files for PCManFM</Summary>
+            <RuntimeDependencies>
+                <Dependency>libgcc</Dependency>
+                <Dependency>liblxqt</Dependency>
+                <Dependency>qt5-base</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/lxqt-about.desktop" permission="0644" owner="root">lxqt-about.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="4">
+                <Date>2015-11-03</Date>
+                <Version>0.10.0</Version>
+                <Comment>version bump</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="3">
+                <Date>2015-05-13</Date>
+                <Version>0.9.0</Version>
+                <Comment>version bump and compiled qt5</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-11-07</Date>
+                <Version>0.8.0</Version>
+                <Comment>version bump</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-05-02</Date>
+                <Version>0.7.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Vedat Demir</Name>
+                <Email>vedat@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>libfm-extra</Name>
+            <Homepage>http://www.lxde.org</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Packager>
+            <License>GPL2</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.lxqt.base</PartOf>
+            <Summary xml:lang="en">Core library of PCManFM file manager</Summary>
+            <Description xml:lang="en">libfm is a Core library of PCManFM file manager</Description>
+            <Archive type="targz" sha1sum="8e29e6ab86a49db25bf6133c5936839a49aa9420">https://github.com/lxde/libfm/archive/1.2.3.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>gettext-devel</Dependency>
+                <Dependency>glib2-devel</Dependency>
+                <Dependency>gtk-doc</Dependency>
+                <Dependency>intltool</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/libfm-extra/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libfm-extra</Name>
+            <Summary xml:lang="en">Development headers for libfm-qt</Summary>
+            <RuntimeDependencies>
+                <Dependency>glib2</Dependency>
+                <Dependency>glib2-devel</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="2">
+                <Date>2015-02-12</Date>
+                <Version>1.2.3</Version>
+                <Comment>rebuild for qt5</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-04-25</Date>
+                <Version>1.2.3</Version>
+                <Comment>First Release</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>lxqt-powermanagement</Name>
+            <Homepage>http://www.lxde.org</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Packager>
+            <License>GPL2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.lxqt.base</PartOf>
+            <Summary xml:lang="en">LXQt power management daemon.</Summary>
+            <Summary xml:lang="tr">LXQt güç yönetimi art alan süreci.</Summary>
+            <Description xml:lang="en">Daemon use for power management and auto-suspend.</Description>
+            <Description xml:lang="tr">Güç yönetimi ve otomatik askıya için kullanılır.</Description>
+            <Archive type="tarxz" sha1sum="55d2b881b2cae4694415086f4b621d794dacc34f">http://downloads.lxqt.org/lxqt/0.10.0/lxqt-powermanagement-0.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>cmake</Dependency>
+                <Dependency>kwindowsystem-devel</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>liblxqt-devel</Dependency>
+                <Dependency>libqtxdg-devel</Dependency>
+                <Dependency>libxcb-devel</Dependency>
+                <Dependency>qt5-base-devel</Dependency>
+                <Dependency>qt5-linguist</Dependency>
+                <Dependency>qt5-svg-devel</Dependency>
+                <Dependency>solid-devel</Dependency>
+                <Dependency>upower-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">lid.patch</Patch>
+                <Patch level="1">lidwatcher.patch</Patch>
+            </Patches>
+            <SourceURI>base/lxqt-powermanagement/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>lxqt-powermanagement</Name>
+            <Summary xml:lang="en">Development files for PCManFM</Summary>
+            <RuntimeDependencies>
+                <Dependency>libgcc</Dependency>
+                <Dependency>liblxqt</Dependency>
+                <Dependency>libxcb</Dependency>
+                <Dependency>qt5-base</Dependency>
+                <Dependency>qt5-svg</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/lxqt-config-powermanagement.desktop" permission="0644" owner="root">lxqt-config-powermanagement.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/lxqt/translations/lxqt-powermanagement/lxqt-powermanagement_tr.qm" permission="0644" owner="root">lxqt-powermanagement_tr.qm</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="4">
+                <Date>2015-11-03</Date>
+                <Version>0.10.0</Version>
+                <Comment>version bump</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="3">
+                <Date>2015-05-13</Date>
+                <Version>0.9.0</Version>
+                <Comment>version bump and compiled with qt5.</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-10-21</Date>
+                <Version>0.8.0</Version>
+                <Comment>version bump.</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-04-25</Date>
+                <Version>0.7.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Vedat Demir</Name>
+                <Email>vedat@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>libfm-qt</Name>
+            <Homepage>http://www.lxde.org</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Packager>
+            <License>GPL2</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.lxqt.base</PartOf>
+            <Summary xml:lang="en">Core library of PCManFM file manager</Summary>
+            <Description xml:lang="en">libfm is a Core library of PCManFM file manager</Description>
+            <Archive type="tarxz" sha1sum="c3f2f34086761d89d6aba549883610084ba00750">mirrors://sourceforge/pcmanfm/PCManFM + Libfm (tarball release)/LibFM/libfm-1.2.3.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>atk-devel</Dependency>
+                <Dependency versionFrom="0.102">dbus-glib-devel</Dependency>
+                <Dependency versionFrom="0.21">desktop-file-utils</Dependency>
+                <Dependency>gettext-devel</Dependency>
+                <Dependency>gst-plugins-base-devel</Dependency>
+                <Dependency versionFrom="1.21">gtk-doc</Dependency>
+                <Dependency versionFrom="2.22.0">gtk2-devel</Dependency>
+                <Dependency versionFrom="0.40.0">intltool</Dependency>
+                <Dependency versionFrom="0.6.21">libexif-devel</Dependency>
+                <Dependency>libxslt-devel</Dependency>
+                <Dependency>lxqt-menu-cache-devel</Dependency>
+                <Dependency versionFrom="0.1.4">lxqt-menu-data</Dependency>
+                <Dependency>udisks2-devel</Dependency>
+                <Dependency versionFrom="0.13.0">vala-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/libfm-qt/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libfm-qt</Name>
+            <Summary xml:lang="en">Development files for PCManFM</Summary>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>dbus-glib</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>glib2</Dependency>
+                <Dependency>gtk2</Dependency>
+                <Dependency>libexif</Dependency>
+                <Dependency>libfm-extra</Dependency>
+                <Dependency>lxqt-menu-cache</Dependency>
+                <Dependency>pango</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="config">/etc</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib/libfm-gtk.so*</Path>
+                <Path fileType="library">/usr/lib/libfm.so*</Path>
+                <Path fileType="library">/usr/lib/libfm/modules</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/libfm</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/man</Path>
+                <Path fileType="data">/usr/share/mime</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>libfm-qt-devel</Name>
+            <Summary xml:lang="en">Development headers for libfm-qt</Summary>
+            <RuntimeDependencies>
+                <Dependency>glib2-devel</Dependency>
+                <Dependency>gtk2-devel</Dependency>
+                <Dependency release="4">libfm-qt</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include/libfm</Path>
+                <Path fileType="library">/usr/lib/pkgconfig/libfm-gtk.pc</Path>
+                <Path fileType="library">/usr/lib/pkgconfig/libfm.pc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="4">
+                <Date>2015-05-13</Date>
+                <Version>1.2.3</Version>
+                <Comment>compiled with qt5</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="3">
+                <Date>2014-04-25</Date>
+                <Version>1.2.3</Version>
+                <Comment>version bump</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-04-25</Date>
+                <Version>1.2.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Vedat Demir</Name>
+                <Email>vedat@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>lxqt-sudo</Name>
+            <Homepage>http://lxqt.org/</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Packager>
+            <License>LGPLv2.1</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.toolkit</PartOf>
+            <Summary xml:lang="en">Python binding of terminal widget for Qt</Summary>
+            <Summary xml:lang="tr">Lxqt yetkili kullanıcı aracı</Summary>
+            <Description xml:lang="en">LXQt privilege program (lxsu).</Description>
+            <Icon>lxqt-sudo</Icon>
+            <Archive type="tarxz" sha1sum="36cd432c5de5ee1cbcb5250fbda2c2ccede25e0f">http://downloads.lxqt.org/lxqt/0.10.0/lxqt-sudo-0.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>cmake</Dependency>
+                <Dependency>kwindowsystem-devel</Dependency>
+                <Dependency>liblxqt-devel</Dependency>
+                <Dependency>libqtxdg-devel</Dependency>
+                <Dependency>qt5-base-devel</Dependency>
+                <Dependency>qt5-linguist</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/lxqt-sudo/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>lxqt-sudo</Name>
+            <Summary xml:lang="en">LXQt privilege program (lxsu).</Summary>
+            <RuntimeDependencies>
+                <Dependency>libgcc</Dependency>
+                <Dependency>liblxqt</Dependency>
+                <Dependency>qt5-base</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2015-11-03</Date>
+                <Version>0.10.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>pcmanfm-qt</Name>
+            <Homepage>http://www.lxde.org</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Packager>
+            <License>GPL2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.lxqt.base</PartOf>
+            <Summary xml:lang="en">The LXQt file manager, Qt port of PCManFM</Summary>
+            <Summary xml:lang="tr">LXQt dosya yöneticisi, PCManFM Qt portu.</Summary>
+            <Description xml:lang="en">File manager and desktop icon manager (Qt port of PCManFM and libfm)</Description>
+            <Description xml:lang="tr">Dosya yöneticisi ve masaüstü simgesi yöneticisi (Qt PCManFM port ve libfm).</Description>
+            <Archive type="tarxz" sha1sum="ffb276293b63935addea73ab4b2ce756856aa91a">http://downloads.lxqt.org/lxqt/0.10.0/pcmanfm-qt-0.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>cmake</Dependency>
+                <Dependency>glib2-devel</Dependency>
+                <Dependency>libfm-qt-devel</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>liblxqt-devel</Dependency>
+                <Dependency>libqtxdg-devel</Dependency>
+                <Dependency>libxcb-devel</Dependency>
+                <Dependency>lxqt-menu-cache-devel</Dependency>
+                <Dependency>qt5-base-devel</Dependency>
+                <Dependency>qt5-linguist</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/pcmanfm-qt/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>pcmanfm-qt</Name>
+            <Summary xml:lang="en">Development headers for lxqt-panel</Summary>
+            <RuntimeDependencies>
+                <Dependency>glib2</Dependency>
+                <Dependency>libfm-qt</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libxcb</Dependency>
+                <Dependency>lxqt-menu-cache</Dependency>
+                <Dependency>qt5-base</Dependency>
+                <Dependency>qt5-x11extras</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="config">/etc/pcmanfm-qt</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share/</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/libfm-qt/translations/libfm-qt_tr.qm" permission="0644" owner="root">libfm-qt_tr.qm</AdditionalFile>
+                <AdditionalFile target="/usr/share/pcmanfm-qt/translations/pcmanfm-qt_tr.qm" permission="0644" owner="root">pcmanfm-qt_tr.qm</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <Package>
+            <Name>pcmanfm-qt-devel</Name>
+            <Summary xml:lang="en">Development files for PCManFM</Summary>
+            <RuntimeDependencies>
+                <Dependency>libfm-qt-devel</Dependency>
+                <Dependency>qt5-base-devel</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/pcmanfm-qt/libfm-qt_tr.qm" permission="0644" owner="root" group="root">libfm-qt_tr.qm</AdditionalFile>
+                <AdditionalFile target="/usr/share/pcmanfm-qt/pcmanfm-qt_tr.qm" permission="0644" owner="root" group="root">pcmanfm-qt_tr.qm</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="4">
+                <Date>2015-11-03</Date>
+                <Version>0.10.0</Version>
+                <Comment>version bump</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="3">
+                <Date>2015-05-13</Date>
+                <Version>0.9.0</Version>
+                <Comment>version bump and compiled with qt5</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-11-07</Date>
+                <Version>0.8.0</Version>
+                <Comment>version bump</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-05-02</Date>
+                <Version>0.7.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Vedat  Demir</Name>
+                <Email>vedat@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>lxqt-runner</Name>
+            <Homepage>http://www.lxde.org</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Packager>
+            <License>GPL2</License>
+            <IsA>app</IsA>
+            <PartOf>desktop.lxqt.base</PartOf>
+            <Summary xml:lang="en">The LXQt application launcher</Summary>
+            <Summary xml:lang="tr">LXQt uygulama başlatıcısı.</Summary>
+            <Description xml:lang="en">Tool used to launch programs quickly by typing their names</Description>
+            <Description xml:lang="tr">Aracı adlarını yazarak hızlıca programları başlatmak için kullanılır.</Description>
+            <Archive type="tarxz" sha1sum="be7ecfa9dede0b970fa88cff5310cd094fda690d">http://downloads.lxqt.org/lxqt/0.10.0/lxqt-runner-0.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>cmake</Dependency>
+                <Dependency>glib2-devel</Dependency>
+                <Dependency>kwindowsystem-devel</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>liblxqt-devel</Dependency>
+                <Dependency>libqtxdg-devel</Dependency>
+                <Dependency>lxqt-globalkeys-devel</Dependency>
+                <Dependency>lxqt-menu-cache-devel</Dependency>
+                <Dependency>qt5-base-devel</Dependency>
+                <Dependency>qt5-linguist</Dependency>
+                <Dependency>qt5-script-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/lxqt-runner/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>lxqt-runner</Name>
+            <Summary xml:lang="en">Development files for PCManFM</Summary>
+            <RuntimeDependencies>
+                <Dependency>glib2</Dependency>
+                <Dependency>kwindowsystem</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>liblxqt</Dependency>
+                <Dependency>libqtxdg</Dependency>
+                <Dependency>lxqt-globalkeys</Dependency>
+                <Dependency>lxqt-menu-cache</Dependency>
+                <Dependency>qt5-base</Dependency>
+                <Dependency>qt5-script</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="4">
+                <Date>2015-11-03</Date>
+                <Version>0.10.0</Version>
+                <Comment>version bump</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="3">
+                <Date>2015-05-13</Date>
+                <Version>0.9.0</Version>
+                <Comment>Version bump and compiled with qt5</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-11-07</Date>
+                <Version>0.8.0</Version>
+                <Comment>Version bump</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-05-02</Date>
+                <Version>0.7.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Vedat Demir</Name>
+                <Email>vedat@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>lxqt-qtplugin</Name>
+            <Homepage>http://www.lxde.org</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Packager>
+            <License>GPL2</License>
+            <IsA>app</IsA>
+            <PartOf>desktop.lxqt.base</PartOf>
+            <Summary xml:lang="en">LXQt platform integration for Qt</Summary>
+            <Summary xml:lang="tr">Qt için LXQt platform entegrasyonu.</Summary>
+            <Description xml:lang="en">LXDE-Qt platform integration plugin for Qt</Description>
+            <Description xml:lang="tr">Qt için LXDE-Qt platform entegrasyon eklentisi.</Description>
+            <Archive type="tarxz" sha1sum="b4d32584daf8d4bbb5e5c30eb481b0431fa60686">http://downloads.lxqt.org/lxqt/0.10.0/lxqt-qtplugin-0.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>cmake</Dependency>
+                <Dependency>kwindowsystem-devel</Dependency>
+                <Dependency>libdbusmenu-qt-devel</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>liblxqt-devel</Dependency>
+                <Dependency>libqtxdg-devel</Dependency>
+                <Dependency>qt5-base-devel</Dependency>
+                <Dependency>qt5-linguist</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/lxqt-qtplugin/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>lxqt-qtplugin</Name>
+            <Summary xml:lang="en">Development files for PCManFM</Summary>
+            <RuntimeDependencies>
+                <Dependency>libgcc</Dependency>
+                <Dependency>qt5-base</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="4">
+                <Date>2015-11-03</Date>
+                <Version>0.10.0</Version>
+                <Comment>version bump</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="3">
+                <Date>2015-05-13</Date>
+                <Version>0.9.0</Version>
+                <Comment>version bump and compiled with qt5.</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-11-07</Date>
+                <Version>0.8.0</Version>
+                <Comment>version bump.</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-05-02</Date>
+                <Version>0.7.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Vedat Demir</Name>
+                <Email>vedat@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>lxqt-globalkeys</Name>
+            <Homepage>http://www.lxde.org</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Packager>
+            <License>GPL2</License>
+            <IsA>app</IsA>
+            <PartOf>desktop.lxqt.base</PartOf>
+            <Summary xml:lang="en">Daemon used to register global keyboard shortcuts</Summary>
+            <Summary xml:lang="tr">Global klavye kısayollarını kaydetmek için kullanılan araç.</Summary>
+            <Description xml:lang="en">LXQt daemon and library for global keyboard shortcuts registration.</Description>
+            <Description xml:lang="tr">Global klavye kısayolları kaydı için LXQT kütüphane ve araçları.</Description>
+            <Archive type="tarxz" sha1sum="161cb4ed278dfcfdc1803cc04a601b5acc689f30">http://downloads.lxqt.org/lxqt/0.10.0/lxqt-globalkeys-0.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>cmake</Dependency>
+                <Dependency>kwindowsystem-devel</Dependency>
+                <Dependency>libX11-devel</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>liblxqt-devel</Dependency>
+                <Dependency>libqtxdg-devel</Dependency>
+                <Dependency>qt5-base-devel</Dependency>
+                <Dependency>qt5-linguist</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/lxqt-globalkeys/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>lxqt-globalkeys</Name>
+            <Summary xml:lang="en">Development headers for libqtxdg</Summary>
+            <RuntimeDependencies>
+                <Dependency>libX11</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>liblxqt</Dependency>
+                <Dependency>qt5-base</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/lxqt-config-globalkeyshortcuts.desktop" permission="0644" owner="root">lxqt-config-globalkeyshortcuts.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <Package>
+            <Name>lxqt-globalkeys-devel</Name>
+            <Summary xml:lang="en">Development headers for lxqt-globalkeys</Summary>
+            <RuntimeDependencies>
+                <Dependency release="4">lxqt-globalkeys</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/lxqt-globalkeys/lxqt-config-globalkeyshortcuts.desktop" permission="0644" owner="root" group="root">lxqt-config-globalkeyshortcuts.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="4">
+                <Date>2015-11-03</Date>
+                <Version>0.10.0</Version>
+                <Comment>version bump</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="3">
+                <Date>2015-05-13</Date>
+                <Version>0.9.0</Version>
+                <Comment>version bump and compiled with qt5</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-11-07</Date>
+                <Version>0.8.0</Version>
+                <Comment>version bump.</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-05-01</Date>
+                <Version>0.7</Version>
+                <Comment>First Release</Comment>
+                <Name>Vedat Demir</Name>
+                <Email>vedat@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>lxqt-notificationd</Name>
+            <Homepage>http://www.lxde.org</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Packager>
+            <License>GPL2</License>
+            <IsA>app</IsA>
+            <PartOf>desktop.lxqt.base</PartOf>
+            <Summary xml:lang="en">LXQt notification daemon and library.</Summary>
+            <Summary xml:lang="tr">LXQt bildirim artalan süreci ve kütüphanesi.</Summary>
+            <Description xml:lang="en">Notification daemon</Description>
+            <Description xml:lang="tr">LXQt bildirim artalan süreci ve kitaplıklarını içerir.</Description>
+            <Archive type="tarxz" sha1sum="c8b905fc65afaafceb4725e1fbc5caf92292c54e">http://downloads.lxqt.org/lxqt/0.10.0/lxqt-notificationd-0.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>cmake</Dependency>
+                <Dependency>kwindowsystem-devel</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>liblxqt-devel</Dependency>
+                <Dependency>libqtxdg-devel</Dependency>
+                <Dependency>qt5-base-devel</Dependency>
+                <Dependency>qt5-linguist</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/lxqt-notificationd/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>lxqt-notificationd</Name>
+            <Summary xml:lang="en">Development headers for lxqt-globalkeys</Summary>
+            <RuntimeDependencies>
+                <Dependency>kwindowsystem</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>liblxqt</Dependency>
+                <Dependency>libqtxdg</Dependency>
+                <Dependency>qt5-base</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="4">
+                <Date>2015-11-03</Date>
+                <Version>0.10.0</Version>
+                <Comment>version bump</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="3">
+                <Date>2015-05-13</Date>
+                <Version>0.9.0</Version>
+                <Comment>version bump and compiled with qt5</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-10-25</Date>
+                <Version>0.8.0</Version>
+                <Comment>version bump.</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-05-02</Date>
+                <Version>0.7.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Vedat Demir</Name>
+                <Email>vedat@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>lxqt-policykit</Name>
+            <Homepage>http://www.lxde.org</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Packager>
+            <License>GPL2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.lxqt.base</PartOf>
+            <Summary xml:lang="en">Policykit agent</Summary>
+            <Summary xml:lang="tr">Policykit agent.</Summary>
+            <Description xml:lang="en">The LXQt policykit authentication agent</Description>
+            <Description xml:lang="tr">LXQt policykit doğrulama aracı.</Description>
+            <Archive type="tarxz" sha1sum="5280b6e6f4d2a71bf6607f1e65beb9cab547bc16">http://downloads.lxqt.org/lxqt/0.10.0/lxqt-policykit-0.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>cmake</Dependency>
+                <Dependency>glib2-devel</Dependency>
+                <Dependency>kwindowsystem-devel</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>liblxqt-devel</Dependency>
+                <Dependency>libqtxdg-devel</Dependency>
+                <Dependency>polkit-devel</Dependency>
+                <Dependency>polkit-qt-devel</Dependency>
+                <Dependency>qt5-linguist</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/lxqt-policykit/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>lxqt-policykit</Name>
+            <Summary xml:lang="en">Development files for PCManFM</Summary>
+            <RuntimeDependencies>
+                <Dependency>libgcc</Dependency>
+                <Dependency>liblxqt</Dependency>
+                <Dependency>libqtxdg</Dependency>
+                <Dependency>polkit-qt</Dependency>
+                <Dependency>qt5-base</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="executable">/usr/libexec</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="localedata">/usr/share/lxqt/translations</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/lxqt/translations/lxqt-policykit-agent/lxqt-policykit-agent_pt.qm" permission="0644" owner="root">lxqt-policykit-agent_pt.qm</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="4">
+                <Date>2015-11-03</Date>
+                <Version>0.10.0</Version>
+                <Comment>version bump</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="3">
+                <Date>2015-05-13</Date>
+                <Version>0.9.0</Version>
+                <Comment>version bump and compiled with qt5</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-11-15</Date>
+                <Version>0.8.0</Version>
+                <Comment>version bump</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-05-02</Date>
+                <Version>0.7.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Vedat Demir</Name>
+                <Email>v.demir@mail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>liblxqt</Name>
+            <Homepage>http://www.lxqt.org</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Packager>
+            <License>GPL2</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.lxqt.base</PartOf>
+            <Summary xml:lang="en">Common base library for LXQt components.</Summary>
+            <Summary xml:lang="tr">Çoğu lxqt bileşenleri için ortak temel kitaplıklar.</Summary>
+            <Description xml:lang="en">Core utility library for all LXDE-Qt components</Description>
+            <Description xml:lang="tr">liblxqt çoğu lxde-qt bileşenleri için ortak temel kitaplıklar içerir.</Description>
+            <Archive type="tarxz" sha1sum="45870efbf773c889db2e9f4c6a65dfb95253c56e">http://downloads.lxqt.org/lxqt/0.10.0/liblxqt-0.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>cmake</Dependency>
+                <Dependency>glibc-devel</Dependency>
+                <Dependency>kwindowsystem-devel</Dependency>
+                <Dependency>libX11-devel</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency versionFrom="1.3.0">libqtxdg-devel</Dependency>
+                <Dependency>pkgconfig</Dependency>
+                <Dependency>qt5-base-devel</Dependency>
+                <Dependency>qt5-linguist</Dependency>
+                <Dependency>qt5-qdbusviewer</Dependency>
+                <Dependency>qt5-x11extras-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/liblxqt/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>liblxqt</Name>
+            <Summary xml:lang="en">Python binding of terminal widget for Qt</Summary>
+            <RuntimeDependencies>
+                <Dependency>kwindowsystem</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency versionFrom="1.3.0">libqtxdg</Dependency>
+                <Dependency>qt5-base</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/lxqt/translations/liblxqt/liblxqt_tr.qm" permission="0644" owner="root">liblxqt_tr.qm</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <Package>
+            <Name>liblxqt-devel</Name>
+            <Summary xml:lang="en">Development headers for liblxqt</Summary>
+            <RuntimeDependencies>
+                <Dependency>liblxqt</Dependency>
+                <Dependency>qt5-base-devel</Dependency>
+                <Dependency>qt5-x11extras-devel</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="4">
+                <Date>2015-11-03</Date>
+                <Version>0.10.0</Version>
+                <Comment>version bump</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="3">
+                <Date>2015-05-13</Date>
+                <Version>0.9.0</Version>
+                <Comment>version bump. and compiled with qt5</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-10-21</Date>
+                <Version>0.8.0</Version>
+                <Comment>version bump. and add tr support</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-04-25</Date>
+                <Version>0.7.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Vedat Demir</Name>
+                <Email>vedat@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>lxqt-session</Name>
+            <Homepage>http://www.lxde.org</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Packager>
+            <License>GPL2</License>
+            <IsA>app</IsA>
+            <PartOf>desktop.lxqt.base</PartOf>
+            <Summary xml:lang="en">LXQt session</Summary>
+            <Summary xml:lang="tr">LXQt oturumu.</Summary>
+            <Description xml:lang="en">An alternative session manager ported from the original razor-session</Description>
+            <Description xml:lang="tr">Orjinal razor-sessiondan taşınan bir alternatif oturum yöneticisidir.</Description>
+            <Archive type="tarxz" sha1sum="de929bf22ba33b97ab453c1e69d77f798c1c69f3">http://downloads.lxqt.org/lxqt/0.10.0/lxqt-session-0.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>cmake</Dependency>
+                <Dependency>kwindowsystem-devel</Dependency>
+                <Dependency>libX11-devel</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>liblxqt-devel</Dependency>
+                <Dependency>libqtxdg-devel</Dependency>
+                <Dependency>qt5-linguist</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/lxqt-session/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>lxqt-session</Name>
+            <Summary xml:lang="en">Development files for PCManFM</Summary>
+            <RuntimeDependencies>
+                <Dependency>kwindowsystem</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>liblxqt</Dependency>
+                <Dependency>libqtxdg</Dependency>
+                <Dependency>qt5-base</Dependency>
+                <Dependency>qt5-x11extras</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share/</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/lxqt-config-session.desktop" permission="0644" owner="root">lxqt-config-session.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/lxqt/translations/lxqt-session/lxqt-config-session_tr.qm" permission="0644" owner="root">lxqt-config-session_tr.qm</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/lxqt-hibernate.desktop" permission="0644" owner="root">lxqt-hibernate.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/lxqt-lockscreen.desktop" permission="0644" owner="root">lxqt-lockscreen.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/lxqt-logout.desktop" permission="0644" owner="root">lxqt-logout.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/lxqt-reboot.desktop" permission="0644" owner="root">lxqt-reboot.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/lxqt-shutdown.desktop" permission="0644" owner="root">lxqt-shutdown.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/applications/lxqt-suspend.desktop" permission="0644" owner="root">lxqt-suspend.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="4">
+                <Date>2015-11-03</Date>
+                <Version>0.10.0</Version>
+                <Comment>version bump</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="3">
+                <Date>2015-05-13</Date>
+                <Version>0.9.0</Version>
+                <Comment>Version Bump and compiled with qt5</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-11-07</Date>
+                <Version>0.8.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-05-01</Date>
+                <Version>0.7.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Vedat Demir</Name>
+                <Email>vedat@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>lxqt-menu-data</Name>
+            <Homepage>http://www.lxde.org</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Packager>
+            <License>GPL2</License>
+            <IsA>data</IsA>
+            <PartOf>desktop.lxqt.base</PartOf>
+            <Summary xml:lang="en">freedesktop.org application menu definition files</Summary>
+            <Summary xml:lang="tr">freedesktop.org uygulama menüsü tanım dosyaları</Summary>
+            <Description xml:lang="en">lxqt-menu-data is freedesktop.org application menu definition files</Description>
+            <Description xml:lang="tr">lxqt-menu-data, freedesktop.org uygulama menüsü için tanım dosyaları içerir.</Description>
+            <Archive type="tarxz" sha1sum="f5fe57c43006cd00fe0a8f4978edd0fbad58793f">mirrors://sourceforge/lxde/lxmenu-data (desktop menu)/lxmenu-data 0.1.4/lxmenu-data-0.1.4.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>intltool</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/lxqt-menu-data/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>lxqt-menu-data</Name>
+            <Summary xml:lang="en">Development files for PCManFM</Summary>
+            <Files>
+                <Path fileType="config">/etc</Path>
+                <Path fileType="data">/usr/share/desktop-directories</Path>
+                <Path fileType="doc">/usr/share/doc/</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="3">
+                <Date>2015-05-13</Date>
+                <Version>0.1.4</Version>
+                <Comment>rebuild for qt5</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-11-07</Date>
+                <Version>0.1.4</Version>
+                <Comment>version bump</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-05-02</Date>
+                <Version>0.1</Version>
+                <Comment>First Release</Comment>
+                <Name>Vedat Demir</Name>
+                <Email>vedat@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>libsysstat</Name>
+            <Homepage>http://www.lxqt.org</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Packager>
+            <License>GPL2</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.lxqt.base</PartOf>
+            <Summary xml:lang="en">Library used to query system info and statistics</Summary>
+            <Summary xml:lang="tr">Sistem bilgisi ve istatistik sorgulamak için kullanılan kütüphane.</Summary>
+            <Description xml:lang="en">Library to query system statistics (net, resource usage, ...)</Description>
+            <Description xml:lang="tr">Sistem bilgisi ve istatistik sorgulamak için kullanılan temel kitaplıklar içerir.</Description>
+            <Archive type="tarxz" sha1sum="96857320c5525bbc4f062196a0422ffce04d4c74">http://downloads.lxqt.org/libsysstat/0.3.1/libsysstat-0.3.1.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>cmake</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>qt5-base-devel</Dependency>
+                <Dependency>qt5-linguist</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/libsysstat/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libsysstat</Name>
+            <Summary xml:lang="en">Development headers for lxqt-globalkeys</Summary>
+            <RuntimeDependencies>
+                <Dependency>libgcc</Dependency>
+                <Dependency>qt5-base</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share/</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>libsysstat-devel</Name>
+            <Summary xml:lang="en">Development headers for libsysstat</Summary>
+            <RuntimeDependencies>
+                <Dependency version="0.3.1">libsysstat</Dependency>
+                <Dependency>qt5-base-devel</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="4">
+                <Date>2015-11-03</Date>
+                <Version>0.3.1</Version>
+                <Comment>version bump</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="3">
+                <Date>2015-05-13</Date>
+                <Version>0.3.0</Version>
+                <Comment>version bump and compiled qt5</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-11-07</Date>
+                <Version>0.2.0</Version>
+                <Comment>version bump.</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-05-02</Date>
+                <Version>0.1.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Vedat Demir</Name>
+                <Email>vedat@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>lxqt-config</Name>
+            <Homepage>http://www.lxqt.org</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Packager>
+            <License>GPL2</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.lxqt.base</PartOf>
+            <Summary xml:lang="en">Common base library for LXQt components.</Summary>
+            <Summary xml:lang="tr">Çoğu lxqt bileşenleri için ortak temel kitaplıklar.</Summary>
+            <Description xml:lang="en">Core utility library for all LXDE-Qt components</Description>
+            <Description xml:lang="tr">liblxqt çoğu lxde-qt bileşenleri için ortak temel kitaplıklar içerir.</Description>
+            <Archive type="tarxz" sha1sum="79a37107c1edd00a166aed91dad48fdc7f20b8df">http://downloads.lxqt.org/lxqt/0.10.0/lxqt-config-0.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>cmake</Dependency>
+                <Dependency>zlib-devel</Dependency>
+                <Dependency>glibc-devel</Dependency>
+                <Dependency>kwindowsystem-devel</Dependency>
+                <Dependency>libX11-devel</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency versionFrom="1.3.0">libqtxdg-devel</Dependency>
+                <Dependency>liblxqt-devel</Dependency>
+                <Dependency>pkgconfig</Dependency>
+                <Dependency>qt5-base-devel</Dependency>
+                <Dependency>qt5-linguist</Dependency>
+                <Dependency>qt5-qdbusviewer</Dependency>
+                <Dependency>qt5-x11extras-devel</Dependency>
+                <Dependency>qt5-svg-devel</Dependency>
+                <Dependency>libXcursor-devel</Dependency>
+                <Dependency>libkscreen-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/lxqt-config/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>lxqt-config</Name>
+            <Summary xml:lang="en">Python binding of terminal widget for Qt</Summary>
+            <RuntimeDependencies>
+                <Dependency>kwindowsystem</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency versionFrom="1.3.0">libqtxdg</Dependency>
+                <Dependency>qt5-base</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/lxqt-config/lxqt-config-cursor_tr.qm" permission="0644" owner="root" group="root">lxqt-config-cursor_tr.qm</AdditionalFile>
+                <AdditionalFile target="/usr/share/lxqt-config/lxqt-config-file-associations.desktop" permission="0644" owner="root" group="root">lxqt-config-file-associations.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/lxqt-config/lxqt-config-file-associations_tr.qm" permission="0644" owner="root" group="root">lxqt-config-file-associations_tr.qm</AdditionalFile>
+                <AdditionalFile target="/usr/share/lxqt-config/lxqt-config-input.desktop" permission="0644" owner="root" group="root">lxqt-config-input.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/lxqt-config/lxqt-config-input_tr.qm" permission="0644" owner="root" group="root">lxqt-config-input_tr.qm</AdditionalFile>
+                <AdditionalFile target="/usr/share/lxqt-config/lxqt-config-monitor.desktop" permission="0644" owner="root" group="root">lxqt-config-monitor.desktop</AdditionalFile>
+                <AdditionalFile target="/usr/share/lxqt-config/lxqt-config-monitor_tr.qm" permission="0644" owner="root" group="root">lxqt-config-monitor_tr.qm</AdditionalFile>
+                <AdditionalFile target="/usr/share/lxqt-config/lxqt-config-notificationd_tr.qm" permission="0644" owner="root" group="root">lxqt-config-notificationd_tr.qm</AdditionalFile>
+                <AdditionalFile target="/usr/share/lxqt-config/lxqt-config-powermanagement_tr.qm" permission="0644" owner="root" group="root">lxqt-config-powermanagement_tr.qm</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="4">
+                <Date>2015-11-03</Date>
+                <Version>0.10.0</Version>
+                <Comment>version bump</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="3">
+                <Date>2015-05-13</Date>
+                <Version>0.9.0</Version>
+                <Comment>version bump. and compiled with qt5</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-10-21</Date>
+                <Version>0.8.0</Version>
+                <Comment>version bump. and add tr support</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-04-25</Date>
+                <Version>0.7.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Vedat Demir</Name>
+                <Email>vedat@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>lxqt-menu-cache</Name>
+            <Homepage>http://lxde.org</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Packager>
+            <License>GPL2</License>
+            <IsA>app</IsA>
+            <PartOf>desktop.lxqt.base</PartOf>
+            <Summary xml:lang="en">freedesktop.org desktop menus for LXDE</Summary>
+            <Description xml:lang="en">Library used to read freedesktop.org menus</Description>
+            <Archive type="tarxz" sha1sum="e7b3854109f9826472cf9795e924acebe5e27861">mirrors://sourceforge/lxde/menu-cache/1.0/menu-cache-1.0.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>glib2-devel</Dependency>
+                <Dependency>gtk-doc</Dependency>
+                <Dependency>libfm-extra</Dependency>
+                <Dependency>qt5-base-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/lxqt-menu-cache/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>lxqt-menu-cache</Name>
+            <Summary xml:lang="en">Development headers for libfm-qt</Summary>
+            <RuntimeDependencies>
+                <Dependency>glib2</Dependency>
+                <Dependency>libfm-extra</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="executable">/usr/libexec</Path>
+                <Path fileType="data">/usr/share</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>lxqt-menu-cache-devel</Name>
+            <Summary xml:lang="en">Development files for lxqt-menu-cache</Summary>
+            <RuntimeDependencies>
+                <Dependency>glib2-devel</Dependency>
+                <Dependency release="4">lxqt-menu-cache</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="4">
+                <Date>2015-05-13</Date>
+                <Version>1.0.0</Version>
+                <Comment>version bump to 1.0.0 from rc</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="3">
+                <Date>2015-02-10</Date>
+                <Version>1.0.0</Version>
+                <Comment>rebuild for qt5</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-11-07</Date>
+                <Version>1.0.0</Version>
+                <Comment>version bump</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-05-02</Date>
+                <Version>0.5.1</Version>
+                <Comment>First Release</Comment>
+                <Name>Vedat Demir</Name>
+                <Email>vedat@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>lxqt-openssh-askpass</Name>
+            <Homepage>https://github.com/lxde</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app</IsA>
+            <PartOf>desktop.lxqt.base</PartOf>
+            <Summary xml:lang="en">LXQt system administration tool</Summary>
+            <Summary xml:lang="tr">LXQt parola uygulaması</Summary>
+            <Description xml:lang="en">LXQt openssh password prompt</Description>
+            <Description xml:lang="tr">LXQt parola uygulaması</Description>
+            <Archive type="tarxz" sha1sum="287293c5a9508ce2c9734af2b981a377b19e85a9">http://downloads.lxqt.org/lxqt/0.10.0/lxqt-openssh-askpass-0.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>cmake</Dependency>
+                <Dependency>kwindowsystem-devel</Dependency>
+                <Dependency>libqtxdg-devel</Dependency>
+                <Dependency>liblxqt-devel</Dependency>
+                <Dependency>lxqt-config</Dependency>
+                <Dependency>qt5-base-devel</Dependency>
+                <Dependency>qt5-linguist</Dependency>
+            </BuildDependencies>
+            <SourceURI>base/lxqt-openssh-askpass/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>lxqt-openssh-askpass</Name>
+            <Summary xml:lang="en">LXQt openssh password prompt</Summary>
+            <RuntimeDependencies>
+                <Dependency>libgcc</Dependency>
+                <Dependency>lxqt-config</Dependency>
+                <Dependency>qt5-base</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2015-11-03</Date>
+                <Version>0.10.0</Version>
+                <Comment>first release</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>gtknetcat</Name>
+            <Homepage>http://wiki.lxde.org/en/GtkNetCat</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv3</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.lxqt.addon</PartOf>
+            <Summary xml:lang="en">A Graphic User Interface for netcat</Summary>
+            <Summary xml:lang="tr">Netcat için grafik kullanıcı arayüzü</Summary>
+            <Description xml:lang="en">GtkNetCat is a Graphic User Interface for netcat. Netcat provides system functions as a computer networking utility for reading from and writing to network connections on either TCP or UDP.</Description>
+            <Description xml:lang="tr">GtkNetCat, netcat için bir grafik kullanıcı arayüzüdür. Netcat TCP ve UDP ağ bağlantılarını okuyup yazabilen sistem fonksiyonlarını sunar.</Description>
+            <Archive type="targz" sha1sum="d624a4e51cda63e75792cc4ba5eb2c17024b5c7f">mirrors://sourceforge/lxde/gtknetcat-0.1.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>gtk2-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">gtknetcat-tr.patch</Patch>
+            </Patches>
+            <SourceURI>addon/gtknetcat/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>gtknetcat</Name>
+            <RuntimeDependencies>
+                <Dependency>gtk2</Dependency>
+                <Dependency>netcat</Dependency>
+                <Dependency>python-gtk</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="executable">/usr/libexec</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="5">
+                <Date>2015-05-13</Date>
+                <Version>0.1</Version>
+                <Comment>Moved into lxqt-desktop</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="4">
+                <Date>2014-09-30</Date>
+                <Version>0.1</Version>
+                <Comment>Responsible packager was defined</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="3">
+                <Date>2013-10-11</Date>
+                <Version>0.1</Version>
+                <Comment>Release bump.</Comment>
+                <Name>Erdinç Gültekin</Name>
+                <Email>erdincgultekin@pisilinux.org</Email>
+            </Update>
+            <Update release="2">
+                <Date>2013-08-26</Date>
+                <Version>0.1</Version>
+                <Comment>Release bump.</Comment>
+                <Name>Serdar Soytetir</Name>
+                <Email>kaptan@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2011-03-28</Date>
+                <Version>0.1</Version>
+                <Comment>First release</Comment>
+                <Name>Engin Manap</Name>
+                <Email>engin@comu.edu.tr</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>liboobs</Name>
+            <Homepage>http://library.gnome.org/devel/liboobs</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Packager>
+            <License>LGPLv2</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.lxqt.addon</PartOf>
+            <Summary xml:lang="en">Liboobs is a wrapping library to the System Tools Backends.</Summary>
+            <Description xml:lang="en">Liboobs is a wrapping library to the System Tools Backends.</Description>
+            <Archive type="tarbz2" sha1sum="d7c6360c3b05876fe6967c068ee26e1b4b54ba0e">ftp://ftp.gnome.org/pub/GNOME/sources/liboobs/3.0/liboobs-3.0.0.tar.bz2</Archive>
+            <SourceURI>addon/liboobs/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>liboobs</Name>
+            <Summary xml:lang="en">Development files for PCManFM</Summary>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>liboobs-devel</Name>
+            <Summary xml:lang="en">liboobs için geliştirme dosyaları</Summary>
+            <RuntimeDependencies>
+                <Dependency>liboobs</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>liboobs-doc</Name>
+            <Summary xml:lang="en">liboobs için döküman belgeleri.</Summary>
+            <RuntimeDependencies>
+                <Dependency release="3">liboobs</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/share/gtk-doc</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="3">
+                <Date>2014-06-07</Date>
+                <Version>3.0.0</Version>
+                <Comment>Release bump for gcc</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="2">
+                <Date>2014-02-04</Date>
+                <Version>3.0.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2013-10-20</Date>
+                <Version>2.32.0</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@yandex.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>qterminal</Name>
+            <Homepage>https://github.com/qterminal‎</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.lxqt.addon</PartOf>
+            <Summary xml:lang="en">QT5-based multitab terminal emulator.</Summary>
+            <Description xml:lang="en">QT5-based multitab terminal emulator.</Description>
+            <Archive type="tarxz" sha1sum="70190b3f0e767bd3016462763e5546c0df98bea8">https://github.com/qterminal/qterminal/releases/download/0.6.0/qterminal-0.6.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>cmake</Dependency>
+                <Dependency>qt5-base-devel</Dependency>
+                <Dependency>qt5-tools-devel</Dependency>
+                <Dependency>libxcb-devel</Dependency>
+                <Dependency>libX11-devel</Dependency>
+                <Dependency>qtermwidget5-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>addon/qterminal/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>qterminal</Name>
+            <RuntimeDependencies>
+                <Dependency>qt5-base</Dependency>
+                <Dependency>qtermwidget5</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="localedata">/usr/share/qterminal/translations</Path>
+                <Path fileType="executable">/usr/bin</Path>
+            </Files>
+            <Replaces>
+                <Package>lxterminal</Package>
+            </Replaces>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/qterminal/translations/qterminal_tr.qm" permission="0644" owner="root">qterminal_tr.qm</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2015-05-13</Date>
+                <Version>0.6.0</Version>
+                <Comment>First Release</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>copyq</Name>
+            <Homepage>https://github.com/hluk/CopyQ</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@gmail.com</Email>
+            </Packager>
+            <License>LGPLv2</License>
+            <IsA>app.gui</IsA>
+            <PartOf>desktop.lxqt.extra</PartOf>
+            <Summary xml:lang="en">Clipboard manager with searchable and editable history.</Summary>
+            <Summary xml:lang="tr">Geçmişte arama düzenleme ve arama yapma yeteneği olan bir pano yöneticisi</Summary>
+            <Description xml:lang="en">Clipboard manager with searchable and editable history.</Description>
+            <Description xml:lang="tr">Geçmişte arama düzenleme ve arama yapma yeteneği olan bir pano yöneticisi</Description>
+            <Archive type="targz" sha1sum="4e756a4358ab3dad1a461204bc6c3ce120ab1329">https://github.com/hluk/CopyQ/archive/v2.4.3.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>qt5-base-devel</Dependency>
+                <Dependency>libXtst-devel</Dependency>
+                <Dependency>libX11-devel</Dependency>
+                <Dependency>libgcc</Dependency>
+            </BuildDependencies>
+            <SourceURI>addon/copyq/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>copyq</Name>
+            <RuntimeDependencies>
+                <Dependency>qt5-base</Dependency>
+                <Dependency>libXtst</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>libX11</Dependency>
+                <Dependency>qt5-script</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="localedata">/usr/share/copyq/translations</Path>
+            </Files>
+            <AdditionalFiles>
+                <AdditionalFile target="/usr/share/applications/copyq.desktop" permission="0644" owner="root">copyq.desktop</AdditionalFile>
+            </AdditionalFiles>
+        </Package>
+        <Package>
+            <Name>copyq-devel</Name>
+            <RuntimeDependencies>
+                <Dependency>copyq</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="2">
+                <Date>2015-05-13</Date>
+                <Version>2.4.1</Version>
+                <Comment>rebuild for qt5</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@gmail.com</Email>
+            </Update>
+            <Update release="1">
+                <Date>2015-01-07</Date>
+                <Version>2.4.1</Version>
+                <Comment>First release.</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@gmail.com</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>libstatgrab</Name>
+            <Homepage>http://www.i-scream.org/libstatgrab</Homepage>
+            <Packager>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Packager>
+            <License>LGPL</License>
+            <IsA>library</IsA>
+            <PartOf>desktop.lxqt.addon</PartOf>
+            <Summary xml:lang="en">libstatgrab is a library that provides cross platform access to statistics about the system on which it&apos;s run.</Summary>
+            <Summary xml:lang="tr">Çalışan sistem hakkında istatistiklere erişimi sağlayan bir kütüphanedir.</Summary>
+            <Description xml:lang="en">libstatgrab is a library for accessing information from the system for statistical purposes.</Description>
+            <Description xml:lang="tr">libstatgrab, çalışan sistem hakkında istatistiklere erişimi sağlayan kitaplıkları içerir.</Description>
+            <Archive type="targz" sha1sum="dd443de8556ca4760c7e33f384208167b266b9cd">ftp://ftp.i-scream.org/pub/i-scream/libstatgrab/libstatgrab-0.91.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>ncurses-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>addon/libstatgrab/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>libstatgrab</Name>
+            <RuntimeDependencies>
+                <Dependency>ncurses</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="header">/usr/include</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="2">
+                <Date>2015-05-13</Date>
+                <Version>0.91</Version>
+                <Comment>version bump</Comment>
+                <Name>Ayhan Yalçınsoy</Name>
+                <Email>ayhanyalcinsoy@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2014-05-02</Date>
+                <Version>0.90</Version>
+                <Comment>First Release</Comment>
+                <Name>Vedat Demir</Name>
+                <Email>vedat@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+</PISI>

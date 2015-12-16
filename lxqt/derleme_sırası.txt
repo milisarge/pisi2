@@ -1,0 +1,24 @@
+libqtxdg
+liblxqt
+lxqt-globalkeys
+lxqt-notificationd
+libsysstat
+menu-cache
+libfm-extra
+libfm
+lxqt-panel
+pcmanfm-qt
+lxqt-session
+lxqt-runner
+lxqt-qtplugin
+lxqt-policykit
+lxqt-powermanagement
+lximage-qt error
+lxqt-config
+obconf-qt
+compton-conf
+lxqt-about
+lxqt-common
+lxqt-menu-data
+lxqt-openssh-askpass
+lxqt-sudo
