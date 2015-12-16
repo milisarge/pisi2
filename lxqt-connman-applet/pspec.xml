@@ -12,7 +12,7 @@
         <IsA>app</IsA>
         <Summary>A Lightweight Panel and Taskbar</Summary>
         <Description>Tint2 is a simple panel and taskbar intentionally made for openbox3, but should also work with other window managers. The goal is to keep a clean and unintrusive look with code lightweight and compliance with freedesktop specifications.</Description>
-        <Archive sha1sum="22e4b04ae49619e7efc32c9ac7bd5c2091899b39" type="zip">https://github.com/surlykke/lxqt-connman-applet/archive/master.zip</Archive>
+        <Archive sha1sum="skip" type="zip">https://github.com/surlykke/lxqt-connman-applet/archive/master.zip</Archive>
         <BuildDependencies>
             <Dependency>liblxqt-devel</Dependency>
             <Dependency>qt5-linguist</Dependency>
@@ -24,7 +24,9 @@
     <Package>
         <Name>lxqt-connman-applet</Name>
         <RuntimeDependencies>
-            <Dependency>liblxqt</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>qt5-base</Dependency>
+            <Dependency>qt5-svg</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
